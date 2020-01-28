@@ -1,12 +1,205 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+</head>
+<body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<header>
+  <nav>
+    <a>
+      <img src="#" width="" height="" alt="Логотип">
+    </a>
+    <ul>
+      <li>
+        <a href="/">Студия</a>
+      </li>
+      <li>
+        <a href="#">Клиенты</a>
+      </li>
+      <li>
+        <a href="catalog.html">Магазин</a>
+      </li>
+      <li>
+        <a href="#">Контакты</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="#">Корзина</a>
+      </li>
+    </ul>
+  </nav>
+</header>
 
-  </body>
+<main>
+  <!-- TODO: не забыть скрыть этот заголовок -->
+  <h1>HTML Academy: Нёрдс</h1>
+
+  <!-- TODO: добавить слайдер в 7 модуле -->
+  <section class="slider">
+    <div>
+      <h2>Долго, дорого, скрупулезно.</h2>
+      <p>
+        Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.
+      </p>
+    </div>
+
+    <div>
+      <h2>Любим математику как никто другой.</h2>
+      <p>
+        Никакого креатива, только математические формулы для расчета идеальных пропорций.
+      </p>
+    </div>
+
+    <div>
+      <h2>Только ночь, только хардкор.</h2>
+      <p>
+        Работать днем, как все? Мы против этого.<br>
+        Ближе к полуночи работа только начинается.
+      </p>
+    </div>
+
+    <button type="button">Узнать больше</button>
+  </section>
+
+  <section class="promo">
+    <ul>
+      <li>
+        <figure>
+          <img src="#" width="" height="" alt="Веб-сайты">
+          <figcaption>Веб-сайты</figcaption>
+        </figure>
+
+        <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+
+        <button type="button">Заказать</button>
+      </li>
+      <li>
+        <figure>
+          <img src="#" width="" height="" alt="Приложения">
+          <figcaption>Приложения</figcaption>
+        </figure>
+
+        <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+
+        <button type="button">Заказать</button>
+      </li>
+      <li>
+        <figure>
+          <img src="#" width="" height="" alt="Презентации">
+          <figcaption>Презентации</figcaption>
+        </figure>
+
+        <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+
+        <button type="button">Заказать</button>
+      </li>
+    </ul>
+  </section>
+
+  <!-- подумал, что было бы логично как-то сгруппировать эти секции, насколько это верно и правильно ли именовал классы? -->
+  <div class="description">
+    <section class="description-left">
+      <h2>Мы&nbsp;&mdash;&nbsp;маленькая, но гордая дизайн-студия из Краснодара.</h2>
+
+      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не
+        покладая рук, как роботы.</p>
+
+      <span>Выполняем заказы на разработку:</span>
+      <ul>
+        <li>Веб-сайтов любой сложности</li>
+        <li>Мобильных приложений для iOS и Android</li>
+        <li>Слайдшоу и видео для корпоративных презентаций</li>
+      </ul>
+    </section>
+
+    <section class="description-right">
+      <figure>
+        <img src="#" width="" height="" alt="Стильное лого нёрдс">
+        <figcaption>
+          <span>С 2004 года любим точность во всем:</span>
+          <ul>
+            <li>
+              <span>146%</span>
+              <span>Уровень самоотдачи</span>
+            </li>
+            <li>
+              <span>100%</span>
+              <span>Соблюдение сроков</span>
+            </li>
+            <li>
+              <span>50%</span>
+              <span>Минимальная предоплата</span>
+            </li>
+          </ul>
+        </figcaption>
+      </figure>
+    </section>
+  </div>
+
+  <section class="partners">
+    <ul>
+      <li>
+        <a href="https://htmlacademy.ru">
+          <img src="#" width="" height="" alt="Лого HTML Academy">
+        </a>
+      </li>
+      <li>
+        <a href="https://borodinski-barber.shop">
+          <img src="#" width="" height="" alt="Лого Barbershop Borodinski">
+        </a>
+      </li>
+      <li>
+        <a href="https://pink.site">
+          <img src="#" width="" height="" alt="Лого Pink">
+        </a>
+      </li>
+      <li>
+        <a href="https://mishka.site">
+          <img src="#" width="" height="" alt="Лого Mishka">
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="map">
+    <!-- не стал добавлять img, как я понимаю оно будет фоновым или это будет интерактивная карта -->
+
+    <div class="map-description">
+      <h2>Nёrds design studio</h2>
+      <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+      <button type="button">Напишите нам</button>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <ul>
+    <li>
+      <a href="https://vk.com">
+        <img src="" width="" height="" alt="Вконтакте">
+      </a>
+    </li>
+    <li>
+      <a href="https://facebook.com">
+        <img src="" width="" height="" alt="Facebook">
+      </a>
+    </li>
+    <li>
+      <a href="https://instagram.com">
+        <img src="" width="" height="" alt="Instagram">
+      </a>
+    </li>
+  </ul>
+
+  <div>
+    <h2>Давайте дружить, это выгодно!</h2>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+  </div>
+</footer>
+
+</body>
 </html>
