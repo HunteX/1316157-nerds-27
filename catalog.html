@@ -39,38 +39,64 @@
   <!-- TODO: где-то тут будет блоки фильтров и сортировки, но пока по заданию не добавляю их -->
 
   <aside>
-    <ul>
-      <li>
-        <label>Адаптивная&nbsp;<input type="radio" name="grid" value="adaptive"></label>
-      </li>
-      <li>
-        <label>Фиксированная&nbsp;<input type="radio" name="grid" value="fixed"></label>
-      </li>
-      <li>
-        <label>Резиновая&nbsp;<input type="radio" name="grid" value="stretch"></label>
-      </li>
-    </ul>
+    <section class="price">
+      <h2>Стоимость:</h2>
+      <!-- TODO: добавить элемент -->
+      <div>
+        <label>От&nbsp;<input type="text" name="price_from"></label>
+        <label>До&nbsp;<input type="text" name="price_to"></label>
+      </div>
+    </section>
 
-    <ul>
-      <li>
-        <label>Слайдер&nbsp;<input type="checkbox" name="slider"></label>
-      </li>
-      <li>
-        <label>Блок преимуществ&nbsp;<input type="checkbox" name="advantages"></label>
-      </li>
-      <li>
-        <label>Новости&nbsp;<input type="checkbox" name="news"></label>
-      </li>
-      <li>
-        <label>Галерея&nbsp;<input type="checkbox" name="galery"></label>
-      </li>
-      <li>
-        <label>Корзина&nbsp;<input type="checkbox" name="cart"></label>
-      </li>
-    </ul>
+    <section class="grid">
+      <h2>Сетка:</h2>
+      <ul>
+        <li>
+          <label>Адаптивная&nbsp;<input type="radio" name="grid" value="adaptive"></label>
+        </li>
+        <li>
+          <label>Фиксированная&nbsp;<input type="radio" name="grid" value="fixed"></label>
+        </li>
+        <li>
+          <label>Резиновая&nbsp;<input type="radio" name="grid" value="stretch"></label>
+        </li>
+      </ul>
+    </section>
+
+    <section class="features">
+      <h2>Особенности:</h2>
+      <ul>
+        <li>
+          <label>Слайдер&nbsp;<input type="checkbox" name="slider"></label>
+        </li>
+        <li>
+          <label>Блок преимуществ&nbsp;<input type="checkbox" name="advantages"></label>
+        </li>
+        <li>
+          <label>Новости&nbsp;<input type="checkbox" name="news"></label>
+        </li>
+        <li>
+          <label>Галерея&nbsp;<input type="checkbox" name="galery"></label>
+        </li>
+        <li>
+          <label>Корзина&nbsp;<input type="checkbox" name="cart"></label>
+        </li>
+      </ul>
+    </section>
   </aside>
 
   <div class="products">
+    <section class="sort">
+      <span>Сортировать</span>
+      <ul>
+        <li>По цене</li>
+        <li>По типу</li>
+        <li>По названию</li>
+      </ul>
+      <span class="up">&#9660;</span>
+      <span class="down">&#9650;</span>
+    </section>
+
     <section class="product">
       <header></header>
       <img src="https://via.placeholder.com/150x100" alt="sedona product image">
@@ -121,8 +147,36 @@
       </footer>
     </section>
 
-    <!-- TODO: блок с пэджинацией тоже пока не добавляю по заданию -->
+    <section class="pagination">
+      <ul>
+        <li>
+          <button type="button">1</button>
+        </li>
+        <li>
+          <button type="button">2</button>
+        </li>
+        <li>
+          <button type="button">3</button>
+        </li>
+      </ul>
+      <button type="button">Следующая</button>
+    </section>
   </div>
+
+  <section class="map">
+    <!-- не стал добавлять img, как я понимаю оно будет фоновым -->
+
+    <div class="map-description">
+      <h2>Nёrds design studio</h2>
+      <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+      <button type="button">Напишите нам</button>
+    </div>
+
+    <!-- корректно ли хранить попап в этом блоке или же его лучше вынести выше? -->
+    <!-- TODO: сделать попап позже -->
+    <div class="write-us-popup"></div>
+  </section>
 </main>
 
 <footer>
