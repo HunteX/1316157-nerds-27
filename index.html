@@ -181,9 +181,34 @@
       <button type="button">Напишите нам</button>
     </div>
 
-    <!-- корректно ли хранить попап в этом блоке или же его лучше вынести выше? -->
-    <!-- TODO: сделать попап позже -->
-    <div class="write-us-popup"></div>
+    <!-- TODO: корректно ли хранить попап в этом блоке или же его лучше вынести выше? -->
+    <div class="write-us-popup">
+      <h2>Напишите нам</h2>
+      <button type="button" aria-label="Закрыть"></button>
+
+      <form action="#" method="post">
+        <div class="form-row">
+          <div class="block-left">
+            <label>
+              Ваше имя:
+              <input type="text" name="name" placeholder="Имя Фамилия">
+            </label>
+          </div>
+          <div class="block-right">
+            <label>
+              Ваш e-mail:
+              <input type="email" name="email" placeholder="email@example.com">
+            </label>
+          </div>
+        </div>
+        <label>
+          Текст письма:
+          <input type="text" name="text" placeholder="В свободной форме">
+        </label>
+        <input type="submit" value="Отправить" aria-label="Отправить">
+      </form>
+    </div>
+
   </section>
 </main>
 
