@@ -180,35 +180,6 @@
       <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
       <button type="button">Напишите нам</button>
     </div>
-
-    <!-- TODO: корректно ли хранить попап в этом блоке или же его лучше вынести выше? -->
-    <div class="write-us-popup">
-      <h2>Напишите нам</h2>
-      <button type="button" aria-label="Закрыть"></button>
-
-      <form action="#" method="post">
-        <div class="form-row">
-          <div class="block-left">
-            <label>
-              Ваше имя:
-              <input type="text" name="name" placeholder="Имя Фамилия">
-            </label>
-          </div>
-          <div class="block-right">
-            <label>
-              Ваш e-mail:
-              <input type="email" name="email" placeholder="email@example.com">
-            </label>
-          </div>
-        </div>
-        <label>
-          Текст письма:
-          <input type="text" name="text" placeholder="В свободной форме">
-        </label>
-        <input type="submit" value="Отправить" aria-label="Отправить">
-      </form>
-    </div>
-
   </section>
 </main>
 
@@ -239,6 +210,33 @@
     <p>Скидка 10% для друзей из социальных сетей.</p>
   </div>
 </footer>
+
+<div class="write-us-popup">
+  <h2>Напишите нам</h2>
+  <button type="button" aria-label="Закрыть"></button>
+
+  <form action="#" method="post">
+    <div class="form-row">
+      <div class="block-left">
+        <label>
+          Ваше имя:
+          <input type="text" name="name" placeholder="Имя Фамилия">
+        </label>
+      </div>
+      <div class="block-right">
+        <label>
+          Ваш e-mail:
+          <input type="email" name="email" placeholder="email@example.com">
+        </label>
+      </div>
+    </div>
+    <label>
+      Текст письма:
+      <input type="text" name="text" placeholder="В свободной форме">
+    </label>
+    <input type="submit" value="Отправить" aria-label="Отправить">
+  </form>
+</div>
 
 </body>
 </html>
