@@ -36,37 +36,30 @@
 <main>
   <h1>Магазин готовых шаблонов</h1>
 
-  <!-- TODO: где-то тут будет блоки фильтров и сортировки, но пока по заданию не добавляю их -->
-
   <aside>
-    <section class="price">
-      <h2>Стоимость:</h2>
-      <!-- TODO: добавить элемент -->
-      <div>
+    <form class="filters" action="#" method="post">
+      <fieldset>
+        <legend>Стоимость:</legend>
+        <!-- TODO: добавить элемент range -->
         <label>От&nbsp;<input type="text" name="price_from"></label>
         <label>До&nbsp;<input type="text" name="price_to"></label>
-      </div>
-    </section>
-
-    <section class="grid">
-      <form action="#" method="post">
-        <fieldset>
-          <legend>Сетка:</legend>
-          <label>Адаптивная&nbsp;<input type="radio" name="grid" value="adaptive"></label>
-          <label>Фиксированная&nbsp;<input type="radio" name="grid" value="fixed"></label>
-          <label>Резиновая&nbsp;<input type="radio" name="grid" value="stretch"></label>
-        </fieldset>
-        <fieldset>
-          <legend>Особенности:</legend>
-          <label>Слайдер&nbsp;<input type="checkbox" name="slider"></label>
-          <label>Блок преимуществ&nbsp;<input type="checkbox" name="advantages"></label>
-          <label>Новости&nbsp;<input type="checkbox" name="news"></label>
-          <label>Галерея&nbsp;<input type="checkbox" name="galery"></label>
-          <label>Корзина&nbsp;<input type="checkbox" name="cart"></label>
-        </fieldset>
-        <input type="submit" value="Показать" aria-label="Показать">
-      </form>
-    </section>
+      </fieldset>
+      <fieldset>
+        <legend>Сетка:</legend>
+        <label>Адаптивная&nbsp;<input type="radio" name="grid" value="adaptive"></label>
+        <label>Фиксированная&nbsp;<input type="radio" name="grid" value="fixed"></label>
+        <label>Резиновая&nbsp;<input type="radio" name="grid" value="stretch"></label>
+      </fieldset>
+      <fieldset>
+        <legend>Особенности:</legend>
+        <label>Слайдер&nbsp;<input type="checkbox" name="slider"></label>
+        <label>Блок преимуществ&nbsp;<input type="checkbox" name="advantages"></label>
+        <label>Новости&nbsp;<input type="checkbox" name="news"></label>
+        <label>Галерея&nbsp;<input type="checkbox" name="galery"></label>
+        <label>Корзина&nbsp;<input type="checkbox" name="cart"></label>
+      </fieldset>
+      <input type="submit" value="Показать" aria-label="Показать">
+    </form>
   </aside>
 
   <div class="products">
