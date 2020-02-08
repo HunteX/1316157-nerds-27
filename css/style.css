@@ -1,3 +1,5 @@
+/* Базовые */
+
 body {
   margin: 0;
 }
@@ -12,4 +14,28 @@ html {
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+/* Стрелки */
+
+a.arrow {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 0;
+}
+
+.arrow::before {
+  display: inline-block;
+  border: 20px solid #000000;
+  border-right: 10px transparent;
+  border-left: 10px transparent;
+  content: "";
+}
+
+.arrow-up::before {
+  border-top-width: 0;
+}
+
+.arrow-down::before {
+  border-bottom-width: 0;
 }
