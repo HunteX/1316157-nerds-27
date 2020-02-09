@@ -301,3 +301,62 @@ a.arrow {
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
 }
+
+.product {
+  cursor: pointer;
+}
+
+.product .product-header {
+  background: url('../img/browser.svg') no-repeat;
+  width: 360px;
+  height: 40px;
+  opacity: 0.12;
+}
+
+.product .product-header:hover {
+  opacity: 1;
+}
+
+.product .button-product {
+  width: 200px;
+  height: 50px;
+  background-color: #fb565a;
+  color: white;
+}
+
+.product .button-product:hover {
+  background-color: #e74246;
+}
+
+.product .button-product:active {
+  background-color: #d7373b;
+}
+
+.product footer {
+  width: 360px;
+  height: 231px;
+  background-color: #eeeeee;
+}
+
+.product a {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  color: black;
+}
+
+.product a:hover {
+  color: #fb565a;
+}
+
+.product a:active {
+  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.product .description {
+  font-size: 16px;
+  text-align: center;
+  color: #666666;
+}
