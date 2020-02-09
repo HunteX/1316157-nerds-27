@@ -249,3 +249,13 @@ a.arrow {
   line-height: 22px;
   color: #444444;
 }
+
+/* Страница магазина */
+
+.header-text {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  text-align: center;
+  color: black;
+}
