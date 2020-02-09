@@ -174,39 +174,39 @@ a.arrow {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button-order-1 {
+.button-order-red {
   background-color: #fb565a;
 }
 
-.button-order-1:hover {
+.button-order-red:hover {
   background-color: #e74246;
 }
 
-.button-order-1:active {
+.button-order-red:active {
   background-color: #d7373b;
 }
 
-.button-order-2 {
+.button-order-green {
   background-color: #00ca74;
 }
 
-.button-order-2:hover {
+.button-order-green:hover {
   background-color: #00bc6c;
 }
 
-.button-order-2:active {
+.button-order-green:active {
   background-color: #00aa62;
 }
 
-.button-order-3 {
+.button-order-yellow {
   background-color: #efc84a;
 }
 
-.button-order-3:hover {
+.button-order-yellow:hover {
   background-color: #eab534;
 }
 
-.button-order-3:active {
+.button-order-yellow:active {
   background-color: #e5a722;
 }
 
