@@ -6,7 +6,7 @@ body {
 
   font-family: 'Roboto', Arial, sans-serif;
 
-  background-color: white;
+  background-color: #fff;
 }
 
 img {
@@ -40,13 +40,15 @@ a {
 
 a.arrow {
   display: inline-block;
+  vertical-align: top;
   margin: 0 10px;
   font-size: 0;
 }
 
 .arrow::before {
   display: inline-block;
-  border: 20px solid #000000;
+  vertical-align: top;
+  border: 20px solid #000;
   border-right: 10px transparent;
   border-left: 10px transparent;
   content: "";
@@ -87,7 +89,7 @@ a.arrow {
   font-weight: 500;
   line-height: 20px;
 
-  color: black;
+  color: #000;
 }
 
 .logo:hover {
@@ -100,25 +102,27 @@ a.arrow {
 
 .site-navigation {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.site-navigation a {
+.site-navigation .navigation-item {
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
-  color: black;
+  color: #000;
   padding-bottom: 10px;
 }
 
-.site-navigation a:hover {
+.site-navigation .navigation-item:hover {
   color: #fb565a;
 }
 
-.site-navigation-active,
-.site-navigation a:active {
+.navigation-item-active,
+.site-navigation .navigation-item:active {
   border-bottom: 2px solid #fb565a;
   padding-bottom: 8px;
 }
@@ -127,28 +131,31 @@ a.arrow {
   display: block;
 }
 
-.cart-icon {
+.icon {
   display: inline-block;
+  vertical-align: top;
   background-image: url('../img/cart-icon.svg');
   width: 15px;
   height: 15px;
 }
 
-.promo-list {
+.promo .promo-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.promo-label {
+.promo .caption {
   font: inherit;
   font-size: 24px;
   font-weight: bold;
   text-align: left;
-  color: black;
+  color: #000;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.promo-description {
+.promo .description {
   font: inherit;
   font-size: 16px;
   font-weight: normal;
@@ -157,102 +164,105 @@ a.arrow {
   color: #283136;
 }
 
-.button-order {
-  color: white;
-  width: 160px;
-  height: 50px;
+.promo .button-order {
+  max-width: 160px;
+  padding: 19px 60px 19px 60px;
+  color: #fff;
 }
 
-.button-order:active {
+.promo .button-order:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button-order-1 {
+.promo .button-order-red {
   background-color: #fb565a;
 }
 
-.button-order-1:hover {
+.promo .button-order-red:hover {
   background-color: #e74246;
 }
 
-.button-order-1:active {
+.promo .button-order-red:active {
   background-color: #d7373b;
 }
 
-.button-order-2 {
+.promo .button-order-green {
   background-color: #00ca74;
 }
 
-.button-order-2:hover {
+.promo .button-order-green:hover {
   background-color: #00bc6c;
 }
 
-.button-order-2:active {
+.promo .button-order-green:active {
   background-color: #00aa62;
 }
 
-.button-order-3 {
+.promo .button-order-yellow {
   background-color: #efc84a;
 }
 
-.button-order-3:hover {
+.promo .button-order-yellow:hover {
   background-color: #eab534;
 }
 
-.button-order-3:active {
+.promo .button-order-yellow:active {
   background-color: #e5a722;
 }
 
-.footer-socials {
+.footer .socials {
   display: block;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.footer-socials .social {
+.socials .social {
   cursor: pointer;
   display: inline-block;
+  vertical-align: top;
   border-radius: 50%;
   background-color: #e1e1e1;
 }
 
-.footer-socials .social:hover {
+.socials .social:hover {
   background-color: #e74246;
 }
 
-.footer-socials .social:active {
+.socials .social:active {
   background-color: #d7373b;
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
-.footer-socials .social-icon {
+.socials .social-icon {
   width: 79px;
   height: 79px;
 }
 
-.footer-socials .social-icon:active {
+.socials .social-icon:active {
   opacity: 0.3;
 }
 
-.footer-socials .social-icon-vk {
+.socials .social-icon-vk {
   background: url('../img/vk-icon.svg') no-repeat center;
 }
 
-.footer-socials .social-icon-facebook {
+.socials .social-icon-facebook {
   background: url('../img/fb-icon.svg') no-repeat center;
 }
 
-.footer-socials .social-icon-instagram {
+.socials .social-icon-instagram {
   background: url('../img/insta-icon.svg') no-repeat center;
 }
 
-.footer-slogan h2 {
+.slogan .caption {
   font-size: 36px;
   font-weight: bold;
   line-height: 36px;
-  color: black;
+  color: #000;
 }
 
-.footer-slogan p {
+.slogan .description {
   font-size: 16px;
   line-height: 22px;
   color: #444444;
@@ -265,32 +275,32 @@ a.arrow {
   font-weight: 500;
   line-height: 55px;
   text-align: center;
-  color: black;
+  color: #000;
 }
 
-.filters fieldset {
+.filters .form-group {
   border: none;
 }
 
-.filters legend {
+.filters .caption {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
-  color: black;
+  color: #000;
 }
 
-.filters label {
+.filters .field {
   font-size: 16px;
   line-height: 20px;
   color: #283136;
 }
 
 .filters .button-submit {
-  color: black;
+  max-width: 260px;
+  padding: 19px 60px 19px 60px;
+  color: #000;
   background-color: #eeeeee;
-  width: 260px;
-  height: 50px;
 }
 
 .filters .button-submit:hover {
@@ -318,10 +328,10 @@ a.arrow {
 }
 
 .product .button-product {
-  width: 200px;
-  height: 50px;
+  max-width: 200px;
+  padding: 19px 60px 19px 60px;
   background-color: #fb565a;
-  color: white;
+  color: #fff;
 }
 
 .product .button-product:hover {
@@ -332,25 +342,25 @@ a.arrow {
   background-color: #d7373b;
 }
 
-.product footer {
+.product .text-block {
   width: 360px;
   height: 231px;
   background-color: #eeeeee;
 }
 
-.product a {
+.product .link {
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
   text-align: center;
-  color: black;
+  color: #000;
 }
 
-.product a:hover {
+.product .link:hover {
   color: #fb565a;
 }
 
-.product a:active {
+.product .link:active {
   opacity: 0.3;
   color: rgba(0, 0, 0, 0.3);
 }

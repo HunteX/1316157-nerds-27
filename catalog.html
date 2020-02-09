@@ -16,22 +16,22 @@
     </a>
     <ul class="site-navigation">
       <li>
-        <a href="index.html">Студия</a>
+        <a class="navigation-item" href="index.html">Студия</a>
       </li>
       <li>
-        <a href="#">Клиенты</a>
+        <a class="navigation-item" href="#">Клиенты</a>
       </li>
       <li>
-        <a class="site-navigation-active" href="/">Магазин</a>
+        <a class="navigation-item navigation-item-active" href="/">Магазин</a>
       </li>
       <li>
-        <a href="#">Контакты</a>
+        <a class="navigation-item" href="#">Контакты</a>
       </li>
     </ul>
     <ul class="site-navigation">
       <li class="cart">
-        <a href="#">
-          <div class="cart-icon"></div>&nbsp;Корзина</a>
+        <a class="navigation-item" href="#">
+          <div class="icon"></div>&nbsp;Корзина</a>
       </li>
     </ul>
   </nav>
@@ -42,25 +42,25 @@
 <main>
   <aside>
     <form class="filters" action="#" method="post">
-      <fieldset>
-        <legend>Стоимость:</legend>
+      <fieldset class="form-group">
+        <legend class="caption">Стоимость:</legend>
         <!-- TODO: добавить элемент range -->
-        <label>От&nbsp;<input type="text" name="price_from"></label>
-        <label>До&nbsp;<input type="text" name="price_to"></label>
+        <label class="field">От&nbsp;<input type="text" name="price_from"></label>
+        <label class="field">До&nbsp;<input type="text" name="price_to"></label>
       </fieldset>
-      <fieldset>
-        <legend>Сетка:</legend>
-        <label><input type="radio" name="grid" value="adaptive">&nbsp;Адаптивная</label>
-        <label><input type="radio" name="grid" value="fixed">&nbsp;Фиксированная</label>
-        <label><input type="radio" name="grid" value="stretch">&nbsp;Резиновая</label>
+      <fieldset class="form-group">
+        <legend class="caption">Сетка:</legend>
+        <label class="field"><input type="radio" name="grid" value="adaptive">&nbsp;Адаптивная</label>
+        <label class="field"><input type="radio" name="grid" value="fixed">&nbsp;Фиксированная</label>
+        <label class="field"><input type="radio" name="grid" value="stretch">&nbsp;Резиновая</label>
       </fieldset>
-      <fieldset>
-        <legend>Особенности:</legend>
-        <label><input type="checkbox" name="slider">&nbsp;Слайдер</label>
-        <label><input type="checkbox" name="advantages">&nbsp;Блок преимуществ</label>
-        <label><input type="checkbox" name="news">&nbsp;Новости</label>
-        <label><input type="checkbox" name="gallery">&nbsp;Галерея</label>
-        <label><input type="checkbox" name="cart">&nbsp;Корзина</label>
+      <fieldset class="form-group">
+        <legend class="caption">Особенности:</legend>
+        <label class="field"><input type="checkbox" name="slider">&nbsp;Слайдер</label>
+        <label class="field"><input type="checkbox" name="advantages">&nbsp;Блок преимуществ</label>
+        <label class="field"><input type="checkbox" name="news">&nbsp;Новости</label>
+        <label class="field"><input type="checkbox" name="gallery">&nbsp;Галерея</label>
+        <label class="field"><input type="checkbox" name="cart">&nbsp;Корзина</label>
       </fieldset>
       <button class="button button-submit" type="submit" value="Показать">Показать</button>
     </form>
@@ -81,8 +81,8 @@
     <section class="product">
       <header class="product-header"></header>
       <img src="img/content/img-sedona.jpg" width="360" height="576" alt="sedona product image">
-      <footer>
-        <h2><a href="#">Sedona</a></h2>
+      <footer class="text-block">
+        <a class="link" href="#">Sedona</a>
         <p class="description">Информационный сайт<br> для туристов</p>
         <button class="button button-product" type="button">9 900 руб.</button>
       </footer>
@@ -91,8 +91,8 @@
     <section class="product">
       <header class="product-header"></header>
       <img src="img/content/img-pink.jpg" width="360" height="576" alt="pink app product image">
-      <footer>
-        <h2><a href="#">Pink App</a></h2>
+      <footer class="text-block">
+        <a class="link" href="#">Pink App</a>
         <p class="description">Продуктовый лендинг<br>приложения для iOS и Android</p>
         <button class="button button-product" type="button">9 900 руб.</button>
       </footer>
@@ -101,8 +101,8 @@
     <section class="product">
       <header class="product-header"></header>
       <img src="img/content/img-barbershop.jpg" width="360" height="576" alt="barbershop borodinski product image">
-      <footer>
-        <h2><a href="#">Barbershop</a></h2>
+      <footer class="text-block">
+        <a class="link" href="#">Barbershop</a>
         <p class="description">Для салона красоты.<br>Для мужчин, да.</p>
         <button class="button button-product" type="button">9 900 руб.</button>
       </footer>
@@ -111,8 +111,8 @@
     <section class="product">
       <header class="product-header"></header>
       <img src="img/content/img-aplus.jpg" width="360" height="576" alt="a plus product image">
-      <footer>
-        <h2><a href="#">A Plus</a></h2>
+      <footer class="text-block">
+        <a class="link" href="#">A Plus</a>
         <p class="description">Лендинг курсов повышения<br>квалификации</p>
         <button class="button button-product" type="button">9 900 руб.</button>
       </footer>
@@ -121,8 +121,8 @@
     <section class="product">
       <header class="product-header"></header>
       <img src="img/content/img-kvast.jpg" width="360" height="576" alt="kvast product image">
-      <footer>
-        <h2><a href="#">Кваст</a></h2>
+      <footer class="text-block">
+        <a class="link" href="#">Кваст</a>
         <p class="description">Промо-сайт производителя<br>крафтового кваса</p>
         <button class="button button-product" type="button">9 900 руб.</button>
       </footer>
@@ -158,10 +158,10 @@
   </section>
 </main>
 
-<footer>
+<footer class="footer">
   <h2 class="visually-hidden">Футер сайта</h2>
 
-  <ul class="footer-socials">
+  <ul class="socials">
     <li class="social" aria-label="Вконтакте">
       <a href="https://vk.com"><div class="social-icon social-icon-vk"></div></a>
     </li>
@@ -173,9 +173,9 @@
     </li>
   </ul>
 
-  <div class="footer-slogan">
-    <h2>Давайте дружить, это выгодно!</h2>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
+  <div class="slogan">
+    <h2 class="caption">Давайте дружить, это выгодно!</h2>
+    <p class="description">Скидка 10% для друзей из социальных сетей.</p>
   </div>
 </footer>
 
