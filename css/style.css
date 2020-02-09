@@ -106,7 +106,7 @@ a.arrow {
   padding: 0;
 }
 
-.site-navigation a {
+.site-navigation .navigation-item {
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -117,12 +117,12 @@ a.arrow {
   padding-bottom: 10px;
 }
 
-.site-navigation a:hover {
+.site-navigation .navigation-item:hover {
   color: #fb565a;
 }
 
-.site-navigation-active,
-.site-navigation a:active {
+.navigation-item-active,
+.site-navigation .navigation-item:active {
   border-bottom: 2px solid #fb565a;
   padding-bottom: 8px;
 }
@@ -131,7 +131,7 @@ a.arrow {
   display: block;
 }
 
-.cart-icon {
+.icon {
   display: inline-block;
   vertical-align: top;
   background-image: url('../img/cart-icon.svg');
@@ -139,13 +139,13 @@ a.arrow {
   height: 15px;
 }
 
-.promo-list {
+.promo .promo-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.promo-label {
+.promo .caption {
   font: inherit;
   font-size: 24px;
   font-weight: bold;
@@ -155,7 +155,7 @@ a.arrow {
   text-transform: uppercase;
 }
 
-.promo-description {
+.promo .description {
   font: inherit;
   font-size: 16px;
   font-weight: normal;
@@ -164,60 +164,60 @@ a.arrow {
   color: #283136;
 }
 
-.button-order {
+.promo .button-order {
   color: #fff;
   width: 160px;
   height: 50px;
 }
 
-.button-order:active {
+.promo .button-order:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button-order-red {
+.promo .button-order-red {
   background-color: #fb565a;
 }
 
-.button-order-red:hover {
+.promo .button-order-red:hover {
   background-color: #e74246;
 }
 
-.button-order-red:active {
+.promo .button-order-red:active {
   background-color: #d7373b;
 }
 
-.button-order-green {
+.promo .button-order-green {
   background-color: #00ca74;
 }
 
-.button-order-green:hover {
+.promo .button-order-green:hover {
   background-color: #00bc6c;
 }
 
-.button-order-green:active {
+.promo .button-order-green:active {
   background-color: #00aa62;
 }
 
-.button-order-yellow {
+.promo .button-order-yellow {
   background-color: #efc84a;
 }
 
-.button-order-yellow:hover {
+.promo .button-order-yellow:hover {
   background-color: #eab534;
 }
 
-.button-order-yellow:active {
+.promo .button-order-yellow:active {
   background-color: #e5a722;
 }
 
-.footer-socials {
+.footer .socials {
   display: block;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.footer-socials .social {
+.socials .social {
   cursor: pointer;
   display: inline-block;
   vertical-align: top;
@@ -225,44 +225,44 @@ a.arrow {
   background-color: #e1e1e1;
 }
 
-.footer-socials .social:hover {
+.socials .social:hover {
   background-color: #e74246;
 }
 
-.footer-socials .social:active {
+.socials .social:active {
   background-color: #d7373b;
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
-.footer-socials .social-icon {
+.socials .social-icon {
   width: 79px;
   height: 79px;
 }
 
-.footer-socials .social-icon:active {
+.socials .social-icon:active {
   opacity: 0.3;
 }
 
-.footer-socials .social-icon-vk {
+.socials .social-icon-vk {
   background: url('../img/vk-icon.svg') no-repeat center;
 }
 
-.footer-socials .social-icon-facebook {
+.socials .social-icon-facebook {
   background: url('../img/fb-icon.svg') no-repeat center;
 }
 
-.footer-socials .social-icon-instagram {
+.socials .social-icon-instagram {
   background: url('../img/insta-icon.svg') no-repeat center;
 }
 
-.footer-slogan h2 {
+.slogan .caption {
   font-size: 36px;
   font-weight: bold;
   line-height: 36px;
   color: #000;
 }
 
-.footer-slogan p {
+.slogan .description {
   font-size: 16px;
   line-height: 22px;
   color: #444444;
@@ -278,11 +278,11 @@ a.arrow {
   color: #000;
 }
 
-.filters fieldset {
+.filters .form-group {
   border: none;
 }
 
-.filters legend {
+.filters .caption {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
@@ -290,7 +290,7 @@ a.arrow {
   color: #000;
 }
 
-.filters label {
+.filters .field {
   font-size: 16px;
   line-height: 20px;
   color: #283136;
@@ -342,13 +342,13 @@ a.arrow {
   background-color: #d7373b;
 }
 
-.product footer {
+.product .text-block {
   width: 360px;
   height: 231px;
   background-color: #eeeeee;
 }
 
-.product a {
+.product .link {
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
@@ -356,11 +356,11 @@ a.arrow {
   color: #000;
 }
 
-.product a:hover {
+.product .link:hover {
   color: #fb565a;
 }
 
-.product a:active {
+.product .link:active {
   opacity: 0.3;
   color: rgba(0, 0, 0, 0.3);
 }
