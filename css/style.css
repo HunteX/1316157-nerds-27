@@ -40,12 +40,14 @@ a {
 
 a.arrow {
   display: inline-block;
+  vertical-align: top;
   margin: 0 10px;
   font-size: 0;
 }
 
 .arrow::before {
   display: inline-block;
+  vertical-align: top;
   border: 20px solid #000;
   border-right: 10px transparent;
   border-left: 10px transparent;
@@ -129,6 +131,7 @@ a.arrow {
 
 .cart-icon {
   display: inline-block;
+  vertical-align: top;
   background-image: url('../img/cart-icon.svg');
   width: 15px;
   height: 15px;
@@ -211,6 +214,7 @@ a.arrow {
 .footer-socials .social {
   cursor: pointer;
   display: inline-block;
+  vertical-align: top;
   border-radius: 50%;
   background-color: #e1e1e1;
 }
