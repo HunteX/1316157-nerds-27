@@ -165,9 +165,9 @@ a.arrow {
 }
 
 .promo .button-order {
+  max-width: 160px;
+  padding: 19px 60px 19px 60px;
   color: #fff;
-  width: 160px;
-  height: 50px;
 }
 
 .promo .button-order:active {
@@ -297,10 +297,10 @@ a.arrow {
 }
 
 .filters .button-submit {
+  max-width: 260px;
+  padding: 19px 60px 19px 60px;
   color: #000;
   background-color: #eeeeee;
-  width: 260px;
-  height: 50px;
 }
 
 .filters .button-submit:hover {
@@ -328,8 +328,8 @@ a.arrow {
 }
 
 .product .button-product {
-  width: 200px;
-  height: 50px;
+  max-width: 200px;
+  padding: 19px 60px 19px 60px;
   background-color: #fb565a;
   color: #fff;
 }
