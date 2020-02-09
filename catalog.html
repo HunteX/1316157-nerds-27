@@ -10,35 +10,38 @@
 <body>
 
 <header>
-  <nav>
+  <nav class="main-navigation">
     <a href="index.html">
       <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип">
     </a>
-    <ul>
+    <ul class="site-navigation">
       <li>
-        <a href="index.html">Студия</a>
+        <a href="/">Студия</a>
       </li>
       <li>
         <a href="#">Клиенты</a>
       </li>
       <li>
-        <a class="nav-item-active" href="/">Магазин</a>
+        <a class="site-navigation-active" href="/">Магазин</a>
       </li>
       <li>
         <a href="#">Контакты</a>
       </li>
     </ul>
-    <ul>
-      <li>
-        <a href="#">Корзина</a>
+    <ul class="site-navigation">
+      <li class="cart">
+        <a href="#">
+          <div class="cart-icon"></div>&nbsp;Корзина</a>
       </li>
     </ul>
   </nav>
+
+  <section class="header-text">
+    <h1>Магазин готовых шаблонов</h1>
+  </section>
 </header>
 
 <main>
-  <h1>Магазин готовых шаблонов</h1>
-
   <aside>
     <form class="filters" action="#" method="post">
       <fieldset>

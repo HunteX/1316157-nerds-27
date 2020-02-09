@@ -100,6 +100,7 @@ a.arrow {
   color: #fb565a;
 }
 
+.site-navigation-active,
 .site-navigation a:active {
   border-bottom: 2px solid #fb565a;
   padding-bottom: 8px;
