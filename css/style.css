@@ -170,8 +170,18 @@ a.arrow {
 }
 
 .slider .button-slider {
-  color: #ffffff;
+  padding: 19px 60px 19px 40px;
+  color: #fff;
   background-color: #fb565a;
+}
+
+.slider .button-slider:hover {
+  background-color: #e74246;
+}
+
+.slider .button-slider:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .promo .promo-list {
@@ -320,6 +330,36 @@ a.arrow {
 
 .partners .partner:active {
   opacity: 0.1;
+}
+
+.map .caption {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #000;
+}
+
+.map .address,
+.map .phone {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #666666;
+}
+
+.map .button-map {
+  padding: 19px 60px 19px 40px;
+  color: #fff;
+  background-color: #fb565a;
+}
+
+.map .button-map:hover {
+  background-color: #e74246;
+}
+
+.map .button-map:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer .socials {
