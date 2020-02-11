@@ -284,6 +284,12 @@ a.arrow {
   color: #000;
 }
 
+.features-right .list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .features-right .percentages {
   font-size: 45px;
   font-weight: bold;
@@ -296,6 +302,24 @@ a.arrow {
   font-weight: normal;
   line-height: 18px;
   color: #283136;
+}
+
+.partners .list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.partners .partner {
+  opacity: 0.2;
+}
+
+.partners .partner:hover {
+  opacity: 1;
+}
+
+.partners .partner:active {
+  opacity: 0.1;
 }
 
 .footer .socials {
