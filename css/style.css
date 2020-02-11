@@ -134,9 +134,44 @@ a.arrow {
 .cart-icon {
   display: inline-block;
   vertical-align: top;
-  background-image: url('../img/cart-icon.svg');
+  background-image: url("../img/cart-icon.svg");
   width: 15px;
   height: 15px;
+}
+
+.slider {
+  background-color: #eeeeee;
+}
+
+.slider .slide-1 {
+  background-image: url("../img/nerds-index-slide1.png");
+}
+
+.slider .slide-2 {
+  background-image: url("../img/nerds-index-slide2.png");
+}
+
+.slider .slide-3 {
+  background-image: url("../img/nerds-index-slide3.png");
+}
+
+.slider .caption {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  color: #000000;
+}
+
+.slider .description {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #283136;
+}
+
+.slider .button-slider {
+  color: #ffffff;
+  background-color: #fb565a;
 }
 
 .promo .promo-list {
@@ -244,15 +279,15 @@ a.arrow {
 }
 
 .socials .social-icon-vk {
-  background: url('../img/vk-icon.svg') no-repeat center;
+  background: url("../img/vk-icon.svg") no-repeat center;
 }
 
 .socials .social-icon-facebook {
-  background: url('../img/fb-icon.svg') no-repeat center;
+  background: url("../img/fb-icon.svg") no-repeat center;
 }
 
 .socials .social-icon-instagram {
-  background: url('../img/insta-icon.svg') no-repeat center;
+  background: url("../img/insta-icon.svg") no-repeat center;
 }
 
 .slogan .caption {
@@ -317,7 +352,7 @@ a.arrow {
 }
 
 .product .product-header {
-  background: url('../img/browser.svg') no-repeat;
+  background: url("../img/browser.svg") no-repeat;
   width: 360px;
   height: 40px;
   opacity: 0.12;
