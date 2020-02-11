@@ -131,7 +131,7 @@ a.arrow {
   display: block;
 }
 
-.icon {
+.cart-icon {
   display: inline-block;
   vertical-align: top;
   background-image: url('../img/cart-icon.svg');
