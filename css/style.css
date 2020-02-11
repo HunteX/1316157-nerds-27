@@ -479,7 +479,7 @@ a.arrow {
 }
 
 .sort .sort-type:focus,
-.sort .sort-type:active {
+.sort .sort-type-active {
   opacity: 0;
   color: #000;
 }
