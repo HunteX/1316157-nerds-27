@@ -159,7 +159,7 @@ a.arrow {
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
-  color: #000000;
+  color: #000;
 }
 
 .slider .description {
@@ -243,6 +243,59 @@ a.arrow {
 
 .promo .button-order-yellow:active {
   background-color: #e5a722;
+}
+
+.features-container {
+  background-color: #fff;
+}
+
+.features-left .caption {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+  color: #000;
+}
+
+.features-left .description {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #283136;
+}
+
+.features-left .orders-text {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #000;
+}
+
+.features-left .orders {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #283136;
+}
+
+.features-right .caption {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #000;
+}
+
+.features-right .percentages {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 10px;
+  color: #000;
+}
+
+.features-right .percentages-text {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #283136;
 }
 
 .footer .socials {
