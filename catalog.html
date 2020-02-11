@@ -69,8 +69,8 @@
   <div class="products">
     <section class="sort">
       <h2 class="caption">Сортировать:</h2>
-      <ul>
-        <li><a class="sort-type sort-type-active" href="#">По цене</a></li>
+      <ul class="list">
+        <li><a class="sort-type sort-type-selected" href="#">По цене</a></li>
         <li><a class="sort-type" href="#">По типу</a></li>
         <li><a class="sort-type" href="#">По названию</a></li>
         <li><a href="#" class="arrow arrow-up sort-type">по возрастанию</a></li>
@@ -131,18 +131,18 @@
     <section class="pagination">
       <h2 class="visually-hidden">Постраничный переключатель</h2>
 
-      <ul>
+      <ul class="list">
         <li>
-          <a href="#" aria-label="Перейти на страницу 1">1</a>
+          <button type="button" class="button-small button-small-selected" aria-label="Перейти на страницу 1">1</button>
         </li>
         <li>
-          <a href="#" aria-label="Перейти на страницу 2">2</a>
+          <button type="button" class="button-small" aria-label="Перейти на страницу 2">2</button>
         </li>
         <li>
-          <a href="#" aria-label="Перейти на страницу 3">3</a>
+          <button type="button" class="button-small" aria-label="Перейти на страницу 3">3</button>
         </li>
       </ul>
-      <a href="#" aria-label="Перейти на следующую страницу">Следующая</a>
+      <button type="button" class="button button-pagination" aria-label="Перейти на следующую страницу">Следующая</button>
     </section>
   </div>
 
