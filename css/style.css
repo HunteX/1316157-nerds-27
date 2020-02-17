@@ -77,7 +77,7 @@ a.arrow {
 
 .main-wrapper {
   width: 1440px;
-  padding: 49px 140px 69px;
+  padding: 0 140px;
   outline: 1px solid red;
   margin: 0 auto;
 }
@@ -85,6 +85,7 @@ a.arrow {
 /* Заголовок */
 
 .page-header {
+  padding-top: 49px;
   background-color: #eeeeee;
 }
 
@@ -207,10 +208,20 @@ a.arrow {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.promo-wrapper {
+  padding: 80px 60px 80px 0;
+  min-height: 507px;
+}
+
 .promo .promo-list {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.promo .figure {
+  margin: 0;
 }
 
 .promo .caption {
@@ -385,16 +396,23 @@ a.arrow {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 217px;
+}
+
 .footer .socials {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 260px;
 }
 
 .socials .social {
   cursor: pointer;
-  display: inline-block;
   vertical-align: top;
   border-radius: 50%;
   background-color: #e1e1e1;
@@ -428,6 +446,10 @@ a.arrow {
 
 .socials .social-icon-instagram {
   background: url("../img/insta-icon.svg") no-repeat center;
+}
+
+.slogan {
+  margin-left: 139px;
 }
 
 .slogan .caption {
@@ -618,4 +640,8 @@ a.arrow {
   font-weight: 500;
   line-height: 18px;
   text-align: center;
+}
+
+.write-us-popup {
+  display: none;
 }
