@@ -409,6 +409,25 @@ a.arrow {
   opacity: 0.1;
 }
 
+.map {
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 416px;
+}
+
+.map .content {
+  display: flex;
+}
+
+.map .description {
+  display: flex;
+  flex-direction: column;
+  width: 319px;
+  min-height: 308px;
+  background-color: #fff;
+}
+
 .map .caption {
   font-size: 18px;
   font-weight: bold;
@@ -437,6 +456,13 @@ a.arrow {
 .map .button-map:active {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.map .marker {
+  width: 367px;
+  min-height: 190px;
+  background-image: url("../img/map-marker.png");
+  background-repeat: no-repeat;
 }
 
 .footer-wrapper {
