@@ -162,8 +162,23 @@ a.arrow {
 }
 
 .slider {
+  display: flex;
+  flex-direction: column; /* удалить после реализации слайдера */
   background-color: #eeeeee;
-  visibility: hidden;
+  min-height: 430px;
+}
+
+.slide .content {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  padding-bottom: 80px;
+}
+
+.slider .slide {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .slider .slide-1 {
@@ -178,11 +193,24 @@ a.arrow {
   background-image: url("../img/nerds-index-slide3.png");
 }
 
+.slider .slide-1 .content {
+  width: 376px;
+}
+
+.slider .slide-2 .content {
+  width: 515px;
+}
+
+.slider .slide-3 .content {
+  width: 408px;
+}
+
 .slider .caption {
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
   color: #000;
+  margin-bottom: 28px;
 }
 
 .slider .description {
@@ -190,10 +218,14 @@ a.arrow {
   font-weight: normal;
   line-height: 24px;
   color: #283136;
+  margin-top: 0;
+  margin-bottom: 42px;
+  width: 409px;
 }
 
 .slider .button-slider {
-  padding: 19px 60px 19px 40px;
+  width: 240px;
+  padding: 16px 35px 16px 40px;
   color: #fff;
   background-color: #fb565a;
 }
