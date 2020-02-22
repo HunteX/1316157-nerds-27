@@ -9,34 +9,37 @@
 </head>
 <body>
 
-<header>
-  <nav class="main-navigation">
-    <a href="index.html">
-      <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип">
-    </a>
-    <ul class="site-navigation">
-      <li>
-        <a class="navigation-item" href="index.html">Студия</a>
-      </li>
-      <li>
-        <a class="navigation-item" href="#">Клиенты</a>
-      </li>
-      <li>
-        <a class="navigation-item navigation-item-active" href="/">Магазин</a>
-      </li>
-      <li>
-        <a class="navigation-item" href="#">Контакты</a>
-      </li>
-    </ul>
-    <ul class="site-navigation">
-      <li class="cart">
-        <a class="navigation-item" href="#">
-          <div class="cart-icon"></div>&nbsp;Корзина</a>
-      </li>
-    </ul>
-  </nav>
+<header class="page-header">
+  <div class="main-wrapper">
 
-  <h1 class="header-text">Магазин готовых шаблонов</h1>
+    <nav class="main-navigation">
+      <a href="index.html">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип">
+      </a>
+      <ul class="site-navigation">
+        <li>
+          <a class="navigation-item" href="index.html">Студия</a>
+        </li>
+        <li>
+          <a class="navigation-item" href="#">Клиенты</a>
+        </li>
+        <li>
+          <a class="navigation-item navigation-item-active" href="/">Магазин</a>
+        </li>
+        <li>
+          <a class="navigation-item" href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="site-navigation">
+        <li class="cart">
+          <a class="navigation-item" href="#">
+            <div class="cart-icon"></div>&nbsp;Корзина</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1 class="header-text">Магазин готовых шаблонов</h1>
+  </div>
 </header>
 
 <main>
@@ -147,41 +150,51 @@
   </div>
 
   <section class="map">
-    <h2 class="visually-hidden">Карта</h2>
+    <div class="main-wrapper">
+      <div class="content">
+        <h2 class="visually-hidden">Карта</h2>
 
-    <div class="map-description">
-      <h2 class="caption">Nёrds design studio</h2>
-      <p class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-      <button class="button button-map" type="button">Напишите нам</button>
+        <div class="description">
+          <h2 class="caption">Nёrds design studio</h2>
+          <p class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <button class="button button-map" type="button">Напишите нам</button>
+        </div>
+
+        <div class="marker"></div>
+      </div>
     </div>
   </section>
 </main>
 
 <footer class="footer">
-  <h2 class="visually-hidden">Футер сайта</h2>
+  <div class="main-wrapper">
+    <div class="footer-wrapper">
+      <h2 class="visually-hidden">Футер сайта</h2>
 
-  <ul class="socials">
-    <li class="social" aria-label="Вконтакте">
-      <a href="https://vk.com">
-        <div class="social-icon social-icon-vk"></div>
-      </a>
-    </li>
-    <li class="social" aria-label="Facebook">
-      <a href="https://facebook.com">
-        <div class="social-icon social-icon-facebook"></div>
-      </a>
-    </li>
-    <li class="social" aria-label="Instagram">
-      <a href="https://instagram.com">
-        <div class="social-icon social-icon-instagram"></div>
-      </a>
-    </li>
-  </ul>
+      <ul class="socials">
+        <li class="social" aria-label="Вконтакте">
+          <a href="https://vk.com">
+            <div class="social-icon social-icon-vk"></div>
+          </a>
+        </li>
+        <li class="social" aria-label="Facebook">
+          <a href="https://facebook.com">
+            <div class="social-icon social-icon-facebook"></div>
+          </a>
+        </li>
+        <li class="social" aria-label="Instagram">
+          <a href="https://instagram.com">
+            <div class="social-icon social-icon-instagram"></div>
+          </a>
+        </li>
+      </ul>
 
-  <div class="slogan">
-    <h2 class="caption">Давайте дружить, это выгодно!</h2>
-    <p class="description">Скидка 10% для друзей из социальных сетей.</p>
+      <div class="slogan">
+        <h2 class="caption">Давайте дружить, это выгодно!</h2>
+        <p class="description">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
   </div>
 </footer>
 
