@@ -536,7 +536,12 @@ a.arrow {
 
 /* Страница магазина */
 
+.page-header-catalog {
+  min-height: 335px;
+}
+
 .header-text {
+  margin-top: 82px;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
