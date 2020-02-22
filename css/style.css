@@ -549,6 +549,26 @@ a.arrow {
   color: #000;
 }
 
+.main-content {
+  display: flex;
+}
+
+.filters {
+  width: 260px;
+}
+
+.range-group {
+  display: flex;
+}
+
+.grid-group {
+  display: flex;
+}
+
+.features-group {
+  display: flex;
+}
+
 .filters .form-group {
   border: none;
 }
@@ -560,6 +580,11 @@ a.arrow {
   font-weight: bold;
   line-height: 30px;
   color: #000;
+}
+
+.filters .caption-cost {
+  padding-top: 63px;
+  padding-bottom: 56px;
 }
 
 .filters .field {
@@ -584,7 +609,21 @@ a.arrow {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.sort {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 59px;
+  align-items: center;
+}
+
+.sort .caption {
+  margin: 0;
+}
+
 .sort .list {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -606,12 +645,27 @@ a.arrow {
 
 .sort .sort-type:active,
 .sort .sort-type-selected {
-  opacity: 0;
+  opacity: 1;
   color: #000;
 }
 
+.products {
+  width: 760px;
+  margin-left: 140px;
+}
+
+.products-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .product {
+  width: 360px;
+  min-height: 616px;
   cursor: pointer;
+  margin-bottom: 33px;
 }
 
 .product .product-header {
@@ -644,6 +698,7 @@ a.arrow {
   width: 360px;
   height: 231px;
   background-color: #eeeeee;
+  display: none;
 }
 
 .product .link {
@@ -669,7 +724,14 @@ a.arrow {
   color: #666666;
 }
 
+.pagination {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
 .pagination .list {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -678,8 +740,8 @@ a.arrow {
 .pagination .button-small {
   font: inherit;
   cursor: pointer;
-  min-width: 43px;
-  min-height: 43px;
+  min-width: 50px;
+  min-height: 50px;
   background-color: #eeeeee;
   border: none;
   border-radius: 4px;
