@@ -116,6 +116,12 @@ a.arrow {
 }
 
 .site-navigation .navigation-item {
+  position: relative;
+  top: 3px;
+  left: -1px;
+}
+
+.site-navigation .navigation-item-link {
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -126,12 +132,12 @@ a.arrow {
   padding-bottom: 10px;
 }
 
-.site-navigation .navigation-item:hover {
+.site-navigation .navigation-item-link:hover {
   color: #fb565a;
 }
 
-.navigation-item-active,
-.site-navigation .navigation-item:active {
+.navigation-item-link-active,
+.site-navigation .navigation-item-link:active {
   border-bottom: 2px solid #fb565a;
   padding-bottom: 8px;
 }
@@ -153,13 +159,16 @@ a.arrow {
   width: 115px;
 }
 
-.cart {
-  display: block;
+.cart-icon {
+  position: relative;
+  left: 20px;
 }
 
-.cart-icon {
-  display: inline-block;
-  vertical-align: top;
+.cart-icon::before {
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: 2px;
   background-image: url("../img/cart-icon.svg");
   width: 15px;
   height: 15px;
