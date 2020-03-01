@@ -136,10 +136,13 @@ a.arrow {
   color: #fb565a;
 }
 
-.navigation-item-link-active,
 .site-navigation .navigation-item-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation-item-link-active {
   border-bottom: 2px solid #fb565a;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
 }
 
 .site-navigation:first-of-type {
