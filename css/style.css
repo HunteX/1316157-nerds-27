@@ -117,7 +117,7 @@ a.arrow {
 
 .site-navigation .navigation-item {
   position: relative;
-  top: 3px;
+  top: 9px;
   left: -1px;
 }
 
@@ -140,7 +140,7 @@ a.arrow {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.navigation-item-link-active {
+.navigation-item-active {
   border-bottom: 2px solid #fb565a;
   padding-bottom: 10px;
 }
@@ -164,6 +164,7 @@ a.arrow {
 
 .cart-icon {
   position: relative;
+  top: -6px;
   left: 20px;
 }
 
