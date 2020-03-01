@@ -91,6 +91,7 @@ a.arrow {
 
 .main-navigation {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-size: 16px;
   font-weight: 500;
@@ -137,6 +138,7 @@ a.arrow {
 
 .site-navigation:first-of-type {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 438px;
   margin-left: 202px;
@@ -144,6 +146,7 @@ a.arrow {
 
 .site-navigation:last-of-type {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-left: auto;
@@ -164,6 +167,7 @@ a.arrow {
 
 .slider {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column; /* удалить после реализации слайдера */
   background-color: #eeeeee;
   min-height: 430px;
@@ -171,6 +175,7 @@ a.arrow {
 
 .slide .content {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-content: space-between;
   padding-bottom: 80px;
@@ -247,6 +252,7 @@ a.arrow {
 
 .promo .promo-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -323,6 +329,7 @@ a.arrow {
 
 .features-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: #fff;
 }
@@ -392,6 +399,7 @@ a.arrow {
 
 .partners .list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -418,10 +426,12 @@ a.arrow {
 
 .map .content {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .map .description {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   width: 319px;
   min-height: 308px;
@@ -467,12 +477,14 @@ a.arrow {
 
 .footer-wrapper {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   min-height: 217px;
 }
 
 .footer .socials {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
   margin: 0;
@@ -551,6 +563,7 @@ a.arrow {
 
 .main-content {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .filters {
@@ -559,14 +572,17 @@ a.arrow {
 
 .range-group {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .grid-group {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .features-group {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .filters .form-group {
@@ -611,6 +627,7 @@ a.arrow {
 
 .sort {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 60px;
   padding-bottom: 59px;
   align-items: center;
@@ -622,6 +639,7 @@ a.arrow {
 
 .sort .list {
   display: flex;
+  flex-wrap: wrap;
   flex-grow: 1;
   justify-content: flex-end;
   list-style: none;
@@ -656,8 +674,8 @@ a.arrow {
 
 .products-wrapper {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -726,12 +744,14 @@ a.arrow {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 30px;
   margin-bottom: 60px;
 }
 
 .pagination .list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
