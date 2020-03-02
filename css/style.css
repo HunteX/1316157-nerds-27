@@ -216,6 +216,8 @@ a.arrow {
 
 .slider .slide-2 {
   background-image: url("../img/nerds-index-slide2.png");
+  background-position-y: 0;
+  background-position-x: 400px;
 }
 
 .slider .slide-3 {
@@ -235,6 +237,9 @@ a.arrow {
 }
 
 .slider .caption {
+  position: relative;
+  top: 22px;
+  left: 2px;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
@@ -242,24 +247,14 @@ a.arrow {
   margin-bottom: 28px;
 }
 
-.slider .slide-1 .caption {
-  position: relative;
-  top: 22px;
-  left: 2px;
-}
-
 .slider .description {
   font-size: 16px;
   font-weight: normal;
   line-height: 24px;
   color: #283136;
-  margin-top: 0;
+  margin-top: 20px;
   margin-bottom: 42px;
   width: 409px;
-}
-
-.slider .slide-1 .description {
-  margin-top: 20px;
 }
 
 .slider .button-slider {
