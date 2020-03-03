@@ -424,6 +424,7 @@ a.arrow {
 }
 
 .features-left .caption {
+  margin-top: 72px;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
@@ -431,6 +432,7 @@ a.arrow {
 }
 
 .features-left .description {
+  margin-top: -4px;
   font-size: 16px;
   font-weight: normal;
   line-height: 24px;
@@ -438,6 +440,8 @@ a.arrow {
 }
 
 .features-left .orders-text {
+  margin-top: 39px;
+  text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
   line-height: 24px;
@@ -445,13 +449,42 @@ a.arrow {
 }
 
 .features-left .orders {
+  margin-top: -4px;
+  margin-left: -4px;
+  list-style: none;
   font-size: 16px;
   font-weight: normal;
   line-height: 18px;
   color: #283136;
 }
 
+.features-left .orders-item {
+  margin-top: 31px;
+}
+
+.features-left .orders-item::before {
+  position: absolute;
+  margin-left: -35px;
+  margin-top: 7px;
+  background-color: red;
+  width: 25px;
+  height: 2px;
+  content: "";
+}
+
+.features-right .figure {
+  padding: 0;
+  margin: 0;
+}
+
+.features-right .illustration {
+  margin-top: 38px;
+}
+
 .features-right .caption {
+  margin-top: 32px;
+  margin-left: 17px;
+  text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
   line-height: 24px;
@@ -459,19 +492,30 @@ a.arrow {
 }
 
 .features-right .list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  position: relative;
+  top: 58px;
+  left: -8px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .features-right .percentages {
+  width: 93px;
   font-size: 45px;
   font-weight: bold;
   line-height: 10px;
   color: #000;
 }
 
+.features-right .percent {
+  position: absolute;
+  font-size: 25px;
+  top: -8px;
+}
+
 .features-right .percentages-text {
+  margin-top: 37px;
+  width: 105px;
   font-size: 16px;
   font-weight: normal;
   line-height: 18px;
