@@ -325,16 +325,23 @@ a.arrow {
 .promo .promo-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+.promo-list .promo-list-item {
+  width: 300px;
+}
+
 .promo .figure {
+  padding: 0;
   margin: 0;
 }
 
 .promo .caption {
+  margin-top: 19px;
   font: inherit;
   font-size: 24px;
   font-weight: bold;
@@ -345,6 +352,7 @@ a.arrow {
 }
 
 .promo .description {
+  width: 250px;
   font: inherit;
   font-size: 16px;
   font-weight: normal;
@@ -354,8 +362,9 @@ a.arrow {
 }
 
 .promo .button-order {
+  margin-top: 16px;
   max-width: 160px;
-  padding: 19px 60px 19px 40px;
+  padding: 16px 60px 16px 40px;
   color: #fff;
 }
 
