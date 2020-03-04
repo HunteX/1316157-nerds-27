@@ -538,6 +538,7 @@ a.arrow {
 }
 
 .partners .partner {
+  cursor: pointer;
   display: block;
   opacity: 0.2;
 }
