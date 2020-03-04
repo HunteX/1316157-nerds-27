@@ -524,16 +524,32 @@ a.arrow {
   color: #283136;
 }
 
+.partners {
+  border-bottom: 2px solid #eee;
+}
+
 .partners .list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .partners .partner {
+  display: block;
   opacity: 0.2;
+}
+
+.partners .list-item:not(:first-child)::before {
+  position: absolute;
+  content: "";
+  border: 1px solid #eee;
+  width: 2px;
+  height: 52px;
+  margin-top: 64px;
+  margin-left: -21px;
 }
 
 .partners .partner:hover {
@@ -545,6 +561,7 @@ a.arrow {
 }
 
 .map {
+  margin-top: 76px;
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
   background-size: cover;
