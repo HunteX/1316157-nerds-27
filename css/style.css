@@ -712,11 +712,12 @@ a.arrow {
 /* Страница магазина */
 
 .page-header-catalog {
-  min-height: 335px;
+  min-height: 355px;
 }
 
 .header-text {
-  margin-top: 82px;
+  margin-top: 68px;
+  margin-left: -8px;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
@@ -734,6 +735,8 @@ a.arrow {
 }
 
 .range-group {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -762,7 +765,7 @@ a.arrow {
 }
 
 .filters .caption-cost {
-  padding-top: 63px;
+  padding-top: 55px;
   padding-bottom: 56px;
 }
 
@@ -791,7 +794,7 @@ a.arrow {
 .sort {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 60px;
+  padding-top: 52px;
   padding-bottom: 59px;
   align-items: center;
 }
