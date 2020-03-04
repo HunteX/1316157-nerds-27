@@ -562,10 +562,11 @@ a.arrow {
 }
 
 .map {
-  margin-top: 76px;
+  margin: 80px auto 0;
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
   background-size: cover;
+  width: 1440px;
   min-height: 416px;
 }
 
@@ -679,6 +680,7 @@ a.arrow {
 }
 
 .slogan .caption {
+  margin-top: 0;
   font-size: 36px;
   font-weight: bold;
   line-height: 36px;
@@ -686,6 +688,8 @@ a.arrow {
 }
 
 .slogan .description {
+  position: absolute;
+  margin-top: -19px;
   font-size: 16px;
   line-height: 22px;
   color: #444444;
