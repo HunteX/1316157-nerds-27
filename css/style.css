@@ -79,7 +79,6 @@ a.arrow {
   width: 1440px;
   padding: 0 140px;
   margin: 0 auto;
-  border-bottom: 2px solid #eee;
 }
 
 /* Заголовок */
@@ -320,6 +319,7 @@ a.arrow {
 .promo-wrapper {
   padding: 80px 60px 80px 0;
   min-height: 507px;
+  border-bottom: 2px solid #eee;
 }
 
 .promo .promo-list {
@@ -413,6 +413,8 @@ a.arrow {
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: #fff;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 62px;
 }
 
 .features-left {
