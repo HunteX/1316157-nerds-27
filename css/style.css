@@ -576,6 +576,10 @@ a.arrow {
 }
 
 .map .description {
+  padding: 34px 50px 47px 50px;
+  position: relative;
+  top: 54px;
+  left: 140px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -585,6 +589,7 @@ a.arrow {
 }
 
 .map .caption {
+  text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
@@ -593,14 +598,20 @@ a.arrow {
 
 .map .address,
 .map .phone {
+  margin-top: 8px;
   font-size: 16px;
   font-weight: normal;
   line-height: 18px;
   color: #666666;
 }
 
+.map .phone {
+  margin-top: 2px;
+}
+
 .map .button-map {
-  padding: 19px 60px 19px 40px;
+  margin-top: 37px;
+  padding: 16px 25px 16px 25px;
   color: #fff;
   background-color: #fb565a;
 }
@@ -615,6 +626,9 @@ a.arrow {
 }
 
 .map .marker {
+  position: relative;
+  top: 89px;
+  left: 365px;
   width: 367px;
   min-height: 190px;
   background-image: url("../img/map-marker.png");
