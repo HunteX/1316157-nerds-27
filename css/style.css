@@ -1015,7 +1015,7 @@ a {
   justify-content: space-between;
 }
 
-.product {
+.products .product {
   width: 360px;
   min-height: 616px;
   cursor: pointer;
@@ -1031,6 +1031,11 @@ a {
 
 .product .product-header:hover {
   opacity: 1;
+}
+
+.product .image {
+  display: block;
+  border: 1px solid #eee;
 }
 
 .product .button-product {
