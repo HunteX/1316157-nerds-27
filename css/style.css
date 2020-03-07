@@ -33,32 +33,6 @@ a {
   border: 0;
 }
 
-/* Стрелки */
-
-a.arrow {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0 10px;
-  font-size: 0;
-}
-
-.arrow::before {
-  display: inline-block;
-  vertical-align: top;
-  border: 20px solid #000;
-  border-right: 10px transparent;
-  border-left: 10px transparent;
-  content: "";
-}
-
-.arrow-up::before {
-  border-top-width: 0;
-}
-
-.arrow-down::before {
-  border-bottom-width: 0;
-}
-
 .button {
   cursor: pointer;
   font: inherit;
@@ -791,29 +765,47 @@ a.arrow {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.sort {
+.products .sort {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 52px;
+  padding-top: 53px;
   padding-bottom: 59px;
   align-items: center;
 }
 
-.sort .caption {
+.products .sort .caption {
+  width: 400px;
   margin: 0;
 }
 
-.sort .list {
+.products .sort .list {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
-  justify-content: flex-end;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.sort .sort-type {
+.products .sort .arrow {
+  position: relative;
+  top: 3px;
+  display: block;
+  width: 11px;
+  height: 10px;
+}
+
+.products .sort .arrow-up {
+  background: url("../img/icon-up-dir.svg");
+}
+
+.products .sort .arrow-down {
+  left: 10px;
+  background: url("../img/icon-down-dir.svg");
+}
+
+.products .sort .sort-type {
   opacity: 0.3;
   font-size: 14px;
   font-weight: normal;
@@ -822,13 +814,17 @@ a.arrow {
   text-transform: uppercase;
 }
 
-.sort .sort-type:hover {
+.products .sort .arrow-active {
+  opacity: 1;
+}
+
+.products .sort .sort-type:hover {
   opacity: 0.6;
   color: rgba(0, 0, 0, 0.6);
 }
 
-.sort .sort-type:active,
-.sort .sort-type-selected {
+.products .sort .sort-type:active,
+.products .sort .sort-type-selected {
   opacity: 1;
   color: #000;
 }
