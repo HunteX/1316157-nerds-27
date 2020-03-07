@@ -256,30 +256,28 @@
   </div>
 </footer>
 
-<div class="write-us-popup">
-  <h2>Напишите нам</h2>
-  <button type="button" aria-label="Закрыть"></button>
+<div class="modal-write-us">
+  <h2 class="caption">Напишите нам</h2>
+  <button class="modal-close" type="button" aria-label="Закрыть"></button>
 
-  <form action="#" method="post">
-    <div class="form-row">
-      <div class="block-left">
-        <label>
-          Ваше имя:
-          <input type="text" name="name" placeholder="Имя Фамилия">
-        </label>
-      </div>
-      <div class="block-right">
-        <label>
-          Ваш e-mail:
-          <input type="email" name="email" placeholder="email@example.com">
-        </label>
-      </div>
-    </div>
-    <label>
-      Текст письма:
-      <input type="text" name="text" placeholder="В свободной форме">
-    </label>
-    <input type="submit" value="Отправить" aria-label="Отправить">
+  <form class="modal-form" action="https://echo.htmlacademy.ru" method="get">
+    <fieldset class="modal-group modal-group-pair">
+      <label class="label" for="name">Ваше имя:</label>
+      <input id="name" class="modal-input" type="text" name="name" placeholder="Имя Фамилия">
+    </fieldset>
+
+    <fieldset class="modal-group modal-group-pair">
+      <label class="label" for="email">Ваш e-mail:</label>
+      <input id="email" class="modal-input" type="email" name="email" placeholder="email@example.com">
+    </fieldset>
+
+    <fieldset class="modal-group modal-group-single">
+      <label class="label" for="text">Текст письма:</label>
+      <textarea id="text" class="modal-input modal-area" type="text" name="text"
+                placeholder="В свободной форме"></textarea>
+    </fieldset>
+
+    <input class="button submit" type="submit" value="Отправить" aria-label="Отправить">
   </form>
 </div>
 

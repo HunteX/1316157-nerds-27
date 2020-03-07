@@ -1085,7 +1085,6 @@ a {
   color: #666666;
 }
 
-
 .product .button-product {
   max-width: 200px;
   padding: 16px 60px 16px 60px;
@@ -1170,6 +1169,122 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.write-us-popup {
-  display: none;
+/* Модальное окно */
+
+.modal-write-us {
+  position: fixed;
+  width: 960px;
+  min-height: 590px;
+  top: 200px;
+  left: 50%;
+  margin-left: -480px;
+  box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+  background: #fff;
+  padding: 73px 100px 84px 100px;
+}
+
+.modal-write-us .modal-close {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  cursor: pointer;
+  border: 0;
+  background: url("../img/close-cross.svg");
+  width: 21px;
+  height: 21px;
+  opacity: 0.3;
+}
+
+.modal-write-us .modal-close:hover {
+  opacity: 1;
+}
+
+.modal-write-us .modal-close:active {
+  opacity: 0.1;
+}
+
+.modal-write-us .caption {
+  padding: 0;
+  margin: 0 0 49px;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1;
+  color: #000;
+}
+
+.modal-write-us .modal-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-write-us .modal-group {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.modal-write-us .modal-group-pair:first-child {
+  flex-grow: 1;
+}
+
+.modal-write-us .label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.13;
+  color: #000;
+  padding-bottom: 12px;
+}
+
+.modal-write-us .modal-input {
+  font: inherit;
+  width: 360px;
+  height: 50px;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+  background-color: #ffffff;
+  padding: 16px 18px;
+  opacity: 0.5;
+}
+
+.modal-write-us .modal-input:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.modal-write-us .modal-input:focus {
+  opacity: 1;
+  border: 2px solid #000;
+}
+
+.modal-write-us .modal-input:invalid {
+  opacity: 1;
+  border: 2px solid #e74246;
+  color: #e74246;
+}
+
+.modal-write-us .modal-group-single {
+  margin-top: 36px;
+}
+
+.modal-write-us .modal-area {
+  width: 760px;
+  min-height: 118px;
+  resize: none;
+}
+
+.modal-write-us .submit {
+  width: 260px;
+  margin-top: 37px;
+  padding: 16px 25px 16px 25px;
+  color: #fff;
+  background-color: #fb565a;
+}
+
+.modal-write-us .submit:hover {
+  background-color: #e74246;
+}
+
+.modal-write-us .submit:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
 }
