@@ -1,8 +1,5 @@
-let isModalOpen = false;
-
 function toggleModal() {
   const modalElement = document.querySelector(".modal-write-us");
 
-  modalElement.style.display = isModalOpen ? "none" : "block";
-  isModalOpen = !isModalOpen;
+  modalElement.style.display = modalElement.style.display === "block" ? "none" : "block";
 }
