@@ -769,7 +769,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   padding-top: 53px;
-  padding-bottom: 59px;
+  padding-bottom: 50px;
   align-items: center;
 }
 
@@ -845,7 +845,7 @@ a {
   width: 360px;
   min-height: 616px;
   cursor: pointer;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 
 .product .product-header {
