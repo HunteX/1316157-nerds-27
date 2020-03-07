@@ -708,31 +708,27 @@ a {
   width: 260px;
 }
 
-.range-group {
+.filters .form-group {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+/* Range */
+
+.filters .range-group {
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
 
-.grid-group {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.features-group {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Range */
-
-.range-filter {
+.range-group .range-filter {
   width: 260px;
   margin-top: 49px;
 }
 
-.range-controls {
+.range-group .range-controls {
   position: relative;
   height: 79px;
   margin-bottom: 13px;
@@ -743,19 +739,19 @@ a {
   border-radius: 5px;
 }
 
-.range-controls .scale {
+.range-group .range-controls .scale {
   height: 2px;
   background: #d7dcde;
 }
 
-.range-controls .bar {
+.range-group .range-controls .bar {
   height: 2px;
   background: #00ca74;
   margin-left: 0;
   width: 70%;
 }
 
-.range-controls .toggle {
+.range-group .range-controls .toggle {
   position: absolute;
   top: 29px;
   left: 0;
@@ -769,26 +765,26 @@ a {
   cursor: pointer;
 }
 
-.range-controls .toggle-min {
+.range-group .range-controls .toggle-min {
   left: 18px;
 }
 
-.range-controls .toggle-max {
+.range-group .range-controls .toggle-max {
   left: 160px;
 }
 
-.price-controls {
+.range-group .price-controls {
   font-size: 0;
 }
 
-.price-controls .field {
+.range-group .price-controls .label {
   display: inline-block;
   width: 50%;
   font-size: 16px;
   text-transform: uppercase;
 }
 
-.price-controls .input-price {
+.range-group .price-controls .input-price {
   width: 80px;
   padding: 10px 9px;
   margin-left: 9px;
@@ -801,15 +797,108 @@ a {
   background: #f1f1f1;
 }
 
-.price-controls .max-price {
+.range-group .price-controls .max-price {
   text-align: right;
 }
 
-/* Остальные фильтры */
+/* Сетка */
 
-.filters .form-group {
-  border: none;
+.filters .grid-group {
+  margin-top: 55px;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.grid-group .radio {
+  display: none;
+}
+
+.grid-group .label {
+  position: relative;
+  padding-top: 18px;
+  margin-left: 36px;
+  cursor: pointer;
+}
+
+.grid-group .label::before {
+  position: absolute;
+  content: "";
+  background: url("../img/radio-off.svg") no-repeat;
+  width: 25px;
+  height: 25px;
+  left: -35px;
+  top: 14px;
+  opacity: 0.4;
+}
+
+.grid-group .radio:nth-of-type(1):checked ~ .label[for="radio-1"]::before,
+.grid-group .radio:nth-of-type(2):checked ~ .label[for="radio-2"]::before,
+.grid-group .radio:nth-of-type(3):checked ~ .label[for="radio-3"]::before {
+  background: url("../img/radio-on.svg") no-repeat;
+}
+
+.grid-group .radio:nth-of-type(1):disabled ~ .label[for="radio-1"],
+.grid-group .radio:nth-of-type(2):disabled ~ .label[for="radio-2"],
+.grid-group .radio:nth-of-type(3):disabled ~ .label[for="radio-3"] {
+  opacity: 0.3; /* по заданию 0.1, но сливается с фоном */
+}
+
+.grid-group .label:hover::before {
+  opacity: 1;
+}
+
+/* Особенности */
+
+.filters .features-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 47px;
+  margin-bottom: 55px;
+}
+
+.features-group .checkbox {
+  display: none;
+}
+
+.features-group .label {
+  position: relative;
+  padding-top: 18px;
+  margin-left: 36px;
+  cursor: pointer;
+}
+
+.features-group .label::before {
+  position: absolute;
+  content: "";
+  background: url("../img/checkbox-off.svg") no-repeat;
+  width: 27px;
+  height: 23px;
+  left: -35px;
+  top: 14px;
+  opacity: 0.4;
+}
+
+.features-group .checkbox:nth-of-type(1):checked ~ .label[for="checkbox-1"]::before,
+.features-group .checkbox:nth-of-type(2):checked ~ .label[for="checkbox-2"]::before,
+.features-group .checkbox:nth-of-type(3):checked ~ .label[for="checkbox-3"]::before,
+.features-group .checkbox:nth-of-type(4):checked ~ .label[for="checkbox-4"]::before,
+.features-group .checkbox:nth-of-type(5):checked ~ .label[for="checkbox-5"]::before {
+  background: url("../img/checkbox-on.svg") no-repeat;
+}
+
+.features-group .checkbox:nth-of-type(1):disabled ~ .label[for="checkbox-1"],
+.features-group .checkbox:nth-of-type(2):disabled ~ .label[for="checkbox-2"],
+.features-group .checkbox:nth-of-type(3):disabled ~ .label[for="checkbox-3"],
+.features-group .checkbox:nth-of-type(4):disabled ~ .label[for="checkbox-4"],
+.features-group .checkbox:nth-of-type(5):disabled ~ .label[for="checkbox-5"] {
+  opacity: 0.3; /* по заданию 0.1, но сливается с фоном */
+}
+
+.features-group .label:hover::before {
+  opacity: 1;
+}
+
+/* Остальные фильтры */
 
 .filters .caption,
 .sort .caption {
@@ -824,15 +913,15 @@ a {
   padding-top: 55px;
 }
 
-.filters .field {
+.filters .label {
   font-size: 16px;
   line-height: 20px;
   color: #283136;
 }
 
 .filters .button-submit {
-  max-width: 260px;
-  padding: 19px 60px 19px 60px;
+  width: 260px;
+  padding: 16px 60px 16px 60px;
   color: #000;
   background-color: #eeeeee;
 }
@@ -845,6 +934,8 @@ a {
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
 }
+
+/* Продукты */
 
 .products .sort {
   display: flex;

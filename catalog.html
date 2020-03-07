@@ -57,24 +57,33 @@
               <div class="toggle toggle-max"></div>
             </div>
             <div class="price-controls">
-              <label class="field min-price">от <input class="input-price" name="min-price" type="number" value="0"></label>
-              <label class="field max-price">до <input class="input-price" name="max-price" type="number" value="15000"></label>
+              <label class="label min-price">от <input class="input-price" name="min-price" type="number"
+                                                       value="0"></label>
+              <label class="label max-price">до <input class="input-price" name="max-price" type="number" value="15000"></label>
             </div>
           </div>
         </fieldset>
         <fieldset class="form-group grid-group">
           <legend class="caption">Сетка:</legend>
-          <label class="field"><input type="radio" name="grid" value="adaptive">&nbsp;Адаптивная</label>
-          <label class="field"><input type="radio" name="grid" value="fixed">&nbsp;Фиксированная</label>
-          <label class="field"><input type="radio" name="grid" value="stretch">&nbsp;Резиновая</label>
+          <input id="radio-1" class="radio" type="radio" name="grid" value="adaptive" checked>
+          <input id="radio-2" class="radio" type="radio" name="grid" value="fixed">
+          <input id="radio-3" class="radio" type="radio" name="grid" value="stretch" disabled>
+          <label for="radio-1" class="label">Адаптивная</label>
+          <label for="radio-2" class="label">Фиксированная</label>
+          <label for="radio-3" class="label">Резиновая</label>
         </fieldset>
         <fieldset class="form-group features-group">
           <legend class="caption">Особенности:</legend>
-          <label class="field"><input type="checkbox" name="slider">&nbsp;Слайдер</label>
-          <label class="field"><input type="checkbox" name="advantages">&nbsp;Блок преимуществ</label>
-          <label class="field"><input type="checkbox" name="news">&nbsp;Новости</label>
-          <label class="field"><input type="checkbox" name="gallery">&nbsp;Галерея</label>
-          <label class="field"><input type="checkbox" name="cart">&nbsp;Корзина</label>
+          <input id="checkbox-1" class="checkbox" type="checkbox" name="slider" checked>
+          <input id="checkbox-2" class="checkbox" type="checkbox" name="advantages">
+          <input id="checkbox-3" class="checkbox" type="checkbox" name="news" checked>
+          <input id="checkbox-4" class="checkbox" type="checkbox" name="gallery">
+          <input id="checkbox-5" class="checkbox" type="checkbox" name="cart" disabled>
+          <label for="checkbox-1" class="label">Слайдер</label>
+          <label for="checkbox-2" class="label">Блок преимуществ</label>
+          <label for="checkbox-3" class="label">Новости</label>
+          <label for="checkbox-4" class="label">Галерея</label>
+          <label for="checkbox-5" class="label">Корзина</label>
         </fieldset>
         <button class="button button-submit" type="submit" value="Показать">Показать</button>
       </form>
