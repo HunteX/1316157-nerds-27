@@ -45,13 +45,22 @@
   <div class="main-wrapper main-content">
 
     <aside>
-      <form class="filters" action="#" method="post">
+      <form class="filters" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form-group range-group">
           <legend class="caption caption-cost">Стоимость:</legend>
-          <!-- TODO: добавить элемент range -->
-          <input type="range" name="range">
-          <label class="field">От&nbsp;<input type="text" name="price_from"></label>
-          <label class="field">До&nbsp;<input type="text" name="price_to"></label>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+            <div class="price-controls">
+              <label class="field min-price">от <input class="input-price" name="min-price" type="number" value="0"></label>
+              <label class="field max-price">до <input class="input-price" name="max-price" type="number" value="15000"></label>
+            </div>
+          </div>
         </fieldset>
         <fieldset class="form-group grid-group">
           <legend class="caption">Сетка:</legend>

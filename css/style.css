@@ -725,6 +725,88 @@ a {
   flex-wrap: wrap;
 }
 
+/* Range */
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.range-controls {
+  position: relative;
+  height: 79px;
+  margin-bottom: 13px;
+  padding-top: 38px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  height: 2px;
+  background: #00ca74;
+  margin-left: 0;
+  width: 70%;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 29px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 2px;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls .field {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls .input-price {
+  width: 80px;
+  padding: 10px 9px;
+  margin-left: 9px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.price-controls .max-price {
+  text-align: right;
+}
+
+/* Остальные фильтры */
+
 .filters .form-group {
   border: none;
 }
@@ -740,7 +822,6 @@ a {
 
 .filters .caption-cost {
   padding-top: 55px;
-  padding-bottom: 56px;
 }
 
 .filters .field {
