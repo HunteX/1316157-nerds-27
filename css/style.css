@@ -1023,15 +1023,17 @@ a {
   margin-bottom: 33px;
 }
 
+.products .product:hover > .product-header,
+.products .product:hover > .text-block {
+  display: block;
+  opacity: 1;
+}
+
 .product .product-header {
   background: url("../img/browser.svg") no-repeat;
   width: 360px;
   height: 40px;
   opacity: 0.12;
-}
-
-.product .product-header:hover {
-  opacity: 1;
 }
 
 .product .image {
@@ -1040,6 +1042,7 @@ a {
 }
 
 .product .text-block {
+  display: none;
   position: absolute;
   bottom: 0;
   width: 360px;
