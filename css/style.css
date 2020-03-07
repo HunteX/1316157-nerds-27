@@ -1083,15 +1083,17 @@ a {
   color: #666666;
 }
 
+/* Постраничная навигация */
+
 .pagination {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 25px;
-  margin-bottom: -21px;
+  margin-top: 27px;
+  margin-bottom: -20px;
 }
 
 .pagination .list {
-  width: 448px;
+  width: 443px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1139,6 +1141,15 @@ a {
   font-weight: 500;
   line-height: 18px;
   text-align: center;
+}
+
+.pagination .button-pagination:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination .button-pagination:active {
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .write-us-popup {
