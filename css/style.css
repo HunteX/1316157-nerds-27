@@ -1172,6 +1172,7 @@ a {
 /* Модальное окно */
 
 .modal-write-us {
+  display: none;
   position: fixed;
   width: 960px;
   min-height: 590px;
