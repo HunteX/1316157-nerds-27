@@ -704,6 +704,8 @@ a {
   flex-wrap: wrap;
 }
 
+/* Фильтры */
+
 .filters {
   width: 260px;
 }
@@ -712,6 +714,25 @@ a {
   padding: 0;
   margin: 0;
   border: none;
+}
+
+.filters .caption,
+.sort .caption {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #000;
+}
+
+.filters .caption-cost {
+  padding-top: 55px;
+}
+
+.filters .label {
+  font-size: 16px;
+  line-height: 20px;
+  color: #283136;
 }
 
 /* Range */
@@ -898,26 +919,7 @@ a {
   opacity: 1;
 }
 
-/* Остальные фильтры */
-
-.filters .caption,
-.sort .caption {
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 30px;
-  color: #000;
-}
-
-.filters .caption-cost {
-  padding-top: 55px;
-}
-
-.filters .label {
-  font-size: 16px;
-  line-height: 20px;
-  color: #283136;
-}
+/* Кнопка "Показать" */
 
 .filters .button-submit {
   width: 260px;
